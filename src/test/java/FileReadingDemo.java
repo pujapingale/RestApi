@@ -32,11 +32,10 @@ public class FileReadingDemo {
 		String deleteUrl = "/Library/DeleteBook.php";
 		
 		String isbn = "bcd";
-		String aisle = "26062006";
+		String aisle = "26062007";
 		String actual = isbn + "" + aisle;
 		System.out.println(actual);
 		String body1 = String.format(body, isbn, aisle);
-		System.out.println(body1);
 
 		//Using Post Method
 		
@@ -53,7 +52,7 @@ public class FileReadingDemo {
 		Assert.assertEquals(actual, expected);
 		
 		//Get book records whose author is "John foe".	
-		String author="John foe";
+	String author="John foe";
 		String authorname=String.format(getUrl, author);
 		System.out.println("Author url is:"+authorname);
 		given().log().all().header("Content-Type", "application/json")
