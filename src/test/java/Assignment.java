@@ -25,7 +25,7 @@ public class Assignment {
 		JsonPath js = new JsonPath(TestData.getCourseJson());
 
 		String isbn = "bcd";
-		String aisle = "26062001";
+		String aisle = "26062003";
 		String actual = isbn + "" + aisle;
 		System.out.println(actual);
 		String body1 = String.format(TestData.getCourseJson(), isbn, aisle);
